@@ -23,37 +23,37 @@ int main(void)
 		  switch (counter) {
 
 		  case 1:
-			  GPIOA->ODR = 0X00000006; // 1 STATE ON THE DİSPLAY
+			  GPIOA->ODR |= 0X00000006; // 1 STATE ON THE DİSPLAY
 			  break;
 		  case 2:
-			  GPIOA->ODR = 0X0000005B; // 2 STATE ON THE DİSPLAY
+			  GPIOA->ODR |= 0X0000005B; // 2 STATE ON THE DİSPLAY
 			  break;
 		  case 3:
-			  GPIOA->ODR = 0X0000005F; // 3 STATE ON THE DİSPLAY
+			  GPIOA->ODR |= 0X0000005F; // 3 STATE ON THE DİSPLAY
 			  break;
 		  case 4:
-			  GPIOA->ODR = 0X00000038; // 4 STATE ON THE DİSPLAY
+			  GPIOA->ODR |= 0X00000038; // 4 STATE ON THE DİSPLAY
 			  break;
 		  case 5:
-			  GPIOA->ODR = 0X0000006D; // 5 STATE ON THE DİSPLAY
+			  GPIOA->ODR |= 0X0000006D; // 5 STATE ON THE DİSPLAY
 			  break;
 		  case 6:
-			  GPIOA->ODR = 0X0000007C; // 6 STATE ON THE DİSPLAY
+			  GPIOA->ODR |= 0X0000007C; // 6 STATE ON THE DİSPLAY
 			  break;
 		  case 7:
-			  GPIOA->ODR = 0X00000007; // 7 STATE ON THE DİSPLAY
+			  GPIOA->ODR |= 0X00000007; // 7 STATE ON THE DİSPLAY
 			  break;
 		  case 8:
-			  GPIOA->ODR = 0X0000007F; // 8 STATE ON THE DİSPLAY
+			  GPIOA->ODR |= 0X0000007F; // 8 STATE ON THE DİSPLAY
 			  break;
 		  case 9:
-			  GPIOA->ODR = 0X0000006F; // 9 STATE ON THE DİSPLAY
+			  GPIOA->ODR |= 0X0000006F; // 9 STATE ON THE DİSPLAY
 			  break;
 
 		  default:
 			  if (counter == 10){
 				  counter=1;
-				  GPIOA->ODR = 0X00000006;
+				  GPIOA->ODR |= 0X00000006;
 			  }
 		  }
 	  }
