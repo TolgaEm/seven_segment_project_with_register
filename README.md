@@ -6,3 +6,5 @@
 
 ** basic consept of seven segment display **
 
+** also we wrote basic driver about our project **
+
