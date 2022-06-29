@@ -9,7 +9,8 @@ uint8_t counter=0;
 
 int main(void)
 {
-
+	
+  HAL_Init();	
   SystemClock_Config();
   button_init();
   led_init();
